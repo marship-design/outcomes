@@ -1,12 +1,11 @@
 <?php
 
-define('HTTP', 'http://');
-define('HOST','outcomes.marshipdesign.pl');
-// define('HOST','localhost/outcomes_php/');
-define('PROJECT_FOLDER', '/');
-// define('PROJECT_FOLDER', '/outcomes_php/');
+define('CURRENT_USER_SESSION_NAME','session_name');	//session name for logged in user
+define('REMEMBER_ME_COOKIE_NAME','cookie_name');	//cookie name for logged in user remember me
+define('REMEMBER_ME_COOKIE_EXPIRY',10800);	//time in seconds for remember me cookie to live
+define('TOKEN_NAME','token');	//time in seconds for remember me cookie to live
 
-
+require_once 'define.php';
 
 require 'core/App.php';
 
