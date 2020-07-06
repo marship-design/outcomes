@@ -18,7 +18,7 @@ var outcomes = (function(){
 
         var options = {
             "format": 'yyyy-mm-dd',
-            "firstDay": '1',
+            "firstDay": 1,
             // "defaultDate": new Date(setDate()),
             "setDefaultDate": 'true',
             "autoClose": 'true'

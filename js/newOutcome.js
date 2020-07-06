@@ -6,11 +6,12 @@ var outcomes = (function(){
 
         var options = {
             "format": 'yyyy-mm-dd',
-            "firstDay": '1',
+            "firstDay": 1,
             "defaultDate": new Date(),
             "setDefaultDate": 'true',
             "autoClose": 'true'
         };
+
         var datePickerInstances = M.Datepicker.init(datePicker, options);
 
         var categorySelect = document.getElementById('categorySelect');
