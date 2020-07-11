@@ -3,7 +3,6 @@
 $database = require 'core/bootstrap.php';
 
 session_start();
- 
 
 if(($_SERVER["SERVER_NAME"] . $_SERVER["REQUEST_URI"]) === HOST.PROJECT_FOLDER.'login/loginAction'){
 // echo 'pasuje do loginAction';
@@ -55,7 +54,7 @@ if(($_SERVER["SERVER_NAME"] . $_SERVER["REQUEST_URI"]) === HOST.PROJECT_FOLDER.'
 }else{
      
     // header('Location: '.HOST.'login');   
-    header('Location: /login');   
+    header('Location: '.PROJECT_FOLDER.'login');   
 
 }
     

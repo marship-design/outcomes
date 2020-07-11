@@ -42,7 +42,7 @@ class LoginController {
                 // $user->login($remember, $res[0]->id_user);
                 $user->login($remember);
                
-                header('Location: /');
+                header('Location: '.PROJECT_FOLDER);
             }else{
                 dd('not passed');
             }
