@@ -23,6 +23,19 @@ function activeLink($url){
     }
 
 }
+
+function getCountry(){
+    
+    $ip = $_SERVER['REMOTE_ADDR'];
+    $dataArray = json_decode(file_get_contents("http://www.geoplugin.net/json.gp?ip=".$ip), true);
+    
+    $country_code = $dataArray["geoplugin_countryCode"];
+
+    $code = "DE";
+    if(!($country_code !== "DE" && $country_code !== "PL")) $code = $country_code;
+
+    return $code;
+}
 // 
 
 // function categoryStatsResult($results) {

@@ -53,8 +53,9 @@ require 'partials/nav.php';
                                         <div class="input-field col s5 l4">
                                             <select id="currencySelect" name="waluta">
                                                 <option value="" disabled>PLN/EUR</option>
-                                                <option value="PLN">PLN</option>
-                                                <option value="EUR" selected>EUR</option>
+                                                <option value="PLN" <?php if($country_code === "PL"){echo 'selected';} ?>>PLN</option>
+                                                <option value="EUR" <?php if($country_code === "DE"){echo 'selected';} ?>>EUR</option>
+                                                <!-- <option value="EUR" selected>EUR</option> -->
                                             </select>
                                             <label>Waluta</label>
                                         </div>

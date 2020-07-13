@@ -39,6 +39,8 @@ class OutcomesController {
         $model = new CategoriesModel();
         $categories = $model->selectAll('kategorie');
 
+        $country_code = getCountry();
+
         require 'views/newOutcome.view.php';
     }
 
